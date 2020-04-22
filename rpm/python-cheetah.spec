@@ -13,11 +13,7 @@ Source:         %{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:  python-devel
-%if 0%{?suse_version}
 BuildRequires:  python-setuptools
-%else
-BuildRequires:  python-setuptools-devel
-%endif
 BuildRequires:  python-lxml, python-pygments, python-markdown
 
 %description
